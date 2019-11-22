@@ -17,7 +17,7 @@ This code has following dependencies:
 * Python [Keras](https://keras.io/)
 * [Gurobi](https://www.gurobi.com/) Python Interface
 
-## Install Dependecies
+## Install Dependencies
 
 ### Gurobi
 

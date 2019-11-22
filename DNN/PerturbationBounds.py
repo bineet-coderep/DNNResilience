@@ -17,11 +17,15 @@ mis-classification
 
 from PerturbationBoundsAPI import *
 
-testData=[[0.73,0.36,0.48,0.5,0.53,0.91,0.92],[0.84,0.44,0.48,0.5,0.48,0.71,0.74],[0.48,0.45,0.48,0.5,0.6,0.78,0.8],[0.54,0.49,0.48,0.5,0.4,0.87,0.88],[0.48,0.41,0.48,0.5,0.51,0.9,0.88],[0.5,0.66,0.48,0.5,0.31,0.92,0.92]]
+testDataLb1=[[0.49,0.29,0.48,0.5,0.56,0.24,0.35]]
+testDataLb2=[[0.73,0.36,0.48,0.5,0.53,0.91,0.92],[0.84,0.44,0.48,0.5,0.48,0.71,0.74],[0.48,0.45,0.48,0.5,0.6,0.78,0.8],[0.54,0.49,0.48,0.5,0.4,0.87,0.88],[0.48,0.41,0.48,0.5,0.51,0.9,0.88],[0.5,0.66,0.48,0.5,0.31,0.92,0.92]]
+testDataLb3=[[0.74,0.49,0.48,0.5,0.42,0.54,0.36]]
+testDataLb4=[[0.76,0.71,0.48,0.5,0.5,0.71,0.75]]
+
 while (True):
     model1=DNNTrainer(INP_SIZE1,OUT_SIZE1,NO_LAYERS1,NEURONS1,DATASET_FILE1,DELIMETER1,EPOCH1,BATCH1)
     pb=PerturbationBounds(model1)
-    pertMax=pb.maxPerturbationFinder(1,testData[0])
+    pertMax=pb.maxPerturbationFinder(3,testDataLb4[0])
 
     if pertMax!=False:
         print("\n\n================= DNN Summary =================")
@@ -32,7 +36,7 @@ while (True):
         print(">>>>>> TEST DATA <<<<<<<<")
         print("Data: ",end="")
         print("-----Prediction------")
-        model1.getPredictions("../Data/ecoliDataLabelTestNew.csv",",",7,8)
+        model1.getPredictions("../Data/ecoliDataLabelTestNewLb4.csv",",",7,8)
         print("=-=-=-=-=-=-")
 
         print("\n")
@@ -43,6 +47,6 @@ while (True):
         print("\n")
 
         print("\n\n================= Perturbation Tester =================")
-        model1.perturbationTesterOne(testData[0]+[1],INP_SIZE1)
+        model1.perturbationTesterOne(testDataLb4[0]+[3],INP_SIZE1)
 
         break
