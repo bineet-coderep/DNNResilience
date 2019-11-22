@@ -9,7 +9,7 @@ This provides a list of APIs to compute the maximum amount of perturbation a Dee
 
 The main Perturbation Computation Engine is `/DNN/PerturbationBounds.py` ([link](https://github.com/bineet-coderep/DNNResilience/blob/master/DNN/PerturbationBounds.py)) and the APIs is in `/DNN/PerturbationBoundsAPI.py`([link](<https://github.com/bineet-coderep/DNNResilience/blob/master/DNN/PerturbationBoundsAPI.py>))
 
-The project report can be found in `/Report/ML_FinalProject.pdf` ([link](https://github.com/bineet-coderep/DNNResilience/blob/master/Report/ML_FinalProject.pdf)) 
+The project report can be found in `/Report/BineetGhosh_ML_FinalProject.pdf` ([link](https://github.com/bineet-coderep/DNNResilience/blob/master/Report/ML_FinalProject.pdf)) 
 
 ## Dependencies
 
