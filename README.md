@@ -7,9 +7,9 @@ The implementation is based on the paper ["Maximum Resilience of Artificial Neur
 
 This provides a list of APIs to compute the maximum amount of perturbation a Deep Neural Network can tolerate without a mis-classification. Using these API an implementation that computes the maximum amount of perturbation a Deep Neural Network can tolerate without a mis-classification is provided.
 
-The main Perturbation Computation Engine is `/DNN/PerturbationBounds.py` ([link](https://github.com/bineet-coderep/DNNResilience/blob/master/DNN/PerturbationBounds.py)) and the APIs is in `DNN/PerturbationBoundsAPI.py`([link](<https://github.com/bineet-coderep/DNNResilience/blob/master/DNN/PerturbationBoundsAPI.py>))
+The main Perturbation Computation Engine is `/DNN/PerturbationBounds.py` ([link](https://github.com/bineet-coderep/DNNResilience/blob/master/DNN/PerturbationBounds.py)) and the APIs is in `/DNN/PerturbationBoundsAPI.py`([link](<https://github.com/bineet-coderep/DNNResilience/blob/master/DNN/PerturbationBoundsAPI.py>))
 
-The project report can be found in `Report/ML_FinalProject.pdf` ([link](https://github.com/bineet-coderep/DNNResilience/blob/master/Report/ML_FinalProject.pdf)) 
+The project report can be found in `/Report/ML_FinalProject.pdf` ([link](https://github.com/bineet-coderep/DNNResilience/blob/master/Report/ML_FinalProject.pdf)) 
 
 ## Dependencies
 
